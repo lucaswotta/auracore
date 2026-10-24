@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner-es.webp" alt="auracore: tu música en los estilos de remix de internet, directo en la pestaña" width="100%">
+  <img src="docs/banner-es.webp" alt="auracore: tu remix a un clic" width="100%">
 </p>
 
 <p align="center">
