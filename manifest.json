@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "auracore",
+  "version": "0.9.0",
+  "description": "__MSG_ext_description__",
+  "default_locale": "en",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabCapture",
+    "offscreen"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "auracore",
+    "default_icon": {
+      "16": "icons/icon-off16.png",
+      "32": "icons/icon-off32.png",
+      "48": "icons/icon-off48.png",
+      "128": "icons/icon-off128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "engine.js",
+        "page.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "styles.js",
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["audio/rain.webm", "audio/underwater.webm"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-off16.png",
+    "32": "icons/icon-off32.png",
+    "48": "icons/icon-off48.png",
+    "128": "icons/icon-off128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

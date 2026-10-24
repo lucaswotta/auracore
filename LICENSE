@@ -1,0 +1,41 @@
+auracore
+Copyright (c) 2026 Lucas Motta (lucaswotta). All rights reserved.
+
+The source code, artwork, character, audio, name and logo in this repository
+are published so they can be read and audited. Publishing them does not grant
+a license to use them beyond what is stated below.
+
+You may:
+
+1. Read and study the contents of this repository.
+2. Install and use auracore for personal, non-commercial purposes, from an
+   official store listing or from this repository.
+3. Fork this repository on GitHub only to propose changes back to it through
+   a pull request.
+
+You may not, without prior written permission from the copyright holder:
+
+- copy, modify, merge, publish, distribute, sublicense or sell the software or
+  any part of it, including the artwork, the character and the audio;
+- publish auracore, or a work derived from it, in any extension store, website
+  or other distribution channel;
+- use the auracore name or logo, or the character, in other products.
+
+Contributions: by submitting a pull request, issue text or other contribution,
+you confirm that you have the right to submit it and you grant the copyright
+holder a perpetual, worldwide, royalty-free, irrevocable license to use,
+modify, distribute and relicense it as part of auracore.
+
+Third-party material: the fonts in fonts/ are licensed under the SIL Open Font
+License 1.1; their license texts are in fonts/licenses/. Those fonts remain
+under their own license.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For permission requests, open an issue at
+https://github.com/lucaswotta/auracore/issues.

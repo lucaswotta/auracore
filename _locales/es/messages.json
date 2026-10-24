@@ -1,0 +1,269 @@
+{
+  "ext_description": {
+    "message": "Slowed + reverb, sped up, nightcore, 8D, lo-fi y otros estilos de remix en el audio de tu pestaña, sin salir del navegador."
+  },
+  "style_slowed": {
+    "message": "slowed + reverb"
+  },
+  "style_sped_up": {
+    "message": "sped up"
+  },
+  "style_nightcore": {
+    "message": "nightcore"
+  },
+  "style_daycore": {
+    "message": "daycore"
+  },
+  "style_vaporwave": {
+    "message": "vaporwave"
+  },
+  "style_8d": {
+    "message": "8D"
+  },
+  "style_bass": {
+    "message": "bass boosted"
+  },
+  "style_lofi": {
+    "message": "lo-fi"
+  },
+  "style_party_bathroom": {
+    "message": "baño de la fiesta"
+  },
+  "style_sunday_night": {
+    "message": "domingo por la noche"
+  },
+  "style_underwater": {
+    "message": "bajo el agua"
+  },
+  "style_empty_arena": {
+    "message": "estadio vacío"
+  },
+  "style_rainy": {
+    "message": "bajo la lluvia"
+  },
+  "style_ethereal": {
+    "message": "etéreo"
+  },
+  "style_phonk": {
+    "message": "phonk"
+  },
+  "style_custom": {
+    "message": "personalizado"
+  },
+  "intensity_soft": {
+    "message": "suave"
+  },
+  "intensity_normal": {
+    "message": "estándar"
+  },
+  "intensity_strong": {
+    "message": "intenso"
+  },
+  "orbit_circle": {
+    "message": "círculo"
+  },
+  "orbit_eight": {
+    "message": "ocho"
+  },
+  "orbit_free": {
+    "message": "libre"
+  },
+  "control_speed": {
+    "message": "velocidad"
+  },
+  "control_bass": {
+    "message": "graves"
+  },
+  "control_muffle": {
+    "message": "amortiguado"
+  },
+  "control_pitch": {
+    "message": "tono"
+  },
+  "control_warmth": {
+    "message": "saturación"
+  },
+  "control_wobble": {
+    "message": "cinta"
+  },
+  "control_chorus": {
+    "message": "chorus"
+  },
+  "control_vinyl": {
+    "message": "vinilo"
+  },
+  "control_reverb": {
+    "message": "reverb"
+  },
+  "control_room": {
+    "message": "sala"
+  },
+  "control_spin": {
+    "message": "8D"
+  },
+  "control_rain": {
+    "message": "lluvia"
+  },
+  "control_water": {
+    "message": "agua"
+  },
+  "header_share_title": {
+    "message": "Copiar invitación para instalar auracore"
+  },
+  "header_share_label": {
+    "message": "Invitar a alguien a auracore"
+  },
+  "header_about": {
+    "message": "Acerca de auracore"
+  },
+  "header_github_title": {
+    "message": "Abrir auracore en GitHub para dejar una estrella"
+  },
+  "header_github_label": {
+    "message": "Estrella en GitHub"
+  },
+  "header_support": {
+    "message": "Apoyar auracore"
+  },
+  "stage_label": {
+    "message": "Escena del estilo actual"
+  },
+  "stage_searching": {
+    "message": "buscando música..."
+  },
+  "stage_active_tab": {
+    "message": "pestaña activa"
+  },
+  "stage_playing_audio": {
+    "message": "reproduciendo audio"
+  },
+  "stage_active_elsewhere": {
+    "message": "activo en otra pestaña"
+  },
+  "orb_label": {
+    "message": "Encender o apagar auracore"
+  },
+  "orb_on": {
+    "message": "activo"
+  },
+  "orb_off": {
+    "message": "encender"
+  },
+  "panel_styles": {
+    "message": "Estilos"
+  },
+  "panel_back": {
+    "message": "Volver a los estilos"
+  },
+  "variant_path": {
+    "message": "trayectoria"
+  },
+  "variant_path_label": {
+    "message": "Trayectoria 8D"
+  },
+  "variant_intensity_label": {
+    "message": "Intensidad"
+  },
+  "custom_my_styles": {
+    "message": "mis estilos"
+  },
+  "custom_sound": {
+    "message": "sonido"
+  },
+  "custom_link_pitch": {
+    "message": "el tono sigue la velocidad"
+  },
+  "custom_orbit": {
+    "message": "trayectoria del 8D"
+  },
+  "custom_orbit_off": {
+    "message": "desactivado"
+  },
+  "custom_effects": {
+    "message": "efectos"
+  },
+  "custom_tape_stop": {
+    "message": "tape stop al pausar"
+  },
+  "custom_fade": {
+    "message": "fade al final de la canción"
+  },
+  "custom_fade_off": {
+    "message": "sin fade"
+  },
+  "custom_name_placeholder": {
+    "message": "nombre de tu estilo"
+  },
+  "custom_name_label": {
+    "message": "Nombre de tu estilo"
+  },
+  "custom_save": {
+    "message": "guardar"
+  },
+  "custom_delete": {
+    "message": "Eliminar estilo"
+  },
+  "about_title": {
+    "message": "acerca de"
+  },
+  "about_what": {
+    "message": "Hola, soy Lucas. Creé auracore para escuchar cualquier canción en slowed + reverb, nightcore o lo-fi sin esperar a que alguien suba esa versión."
+  },
+  "about_how": {
+    "message": "El efecto suena solo en la pestaña donde lo activaste y todo ocurre en tu navegador. Nada de lo que escuchas se graba ni se envía a ningún lado."
+  },
+  "about_capture": {
+    "message": "En Spotify y Amazon Music, Chrome muestra un aviso de captura de la pestaña mientras el efecto está activo. Así es como el efecto llega a esas canciones."
+  },
+  "about_version": {
+    "message": "versión $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.9.0"
+      }
+    }
+  },
+  "support_title": {
+    "message": "¿un cafecito?"
+  },
+  "support_intro": {
+    "message": "auracore es gratuito y seguirá siéndolo. Lo desarrollo en mis ratos libres, entre el trabajo y la universidad."
+  },
+  "support_kind": {
+    "message": "Si ya acompaña tu música, ¿qué tal invitarme un cafecito? Cualquier monto ayuda y me anima a seguir mejorándolo."
+  },
+  "support_alternative": {
+    "message": "Si no puedes, no pasa nada: recomendarlo a un amigo o dejar una estrella en GitHub ya me alegra el día."
+  },
+  "support_qr_hint": {
+    "message": "Escanea el código de arriba para abrir GitHub Sponsors en tu teléfono."
+  },
+  "support_sponsors_alt": {
+    "message": "QR de GitHub Sponsors"
+  },
+  "toast_invite": {
+    "message": "Escucha tu música en slowed + reverb, nightcore, 8D y más, directamente en el navegador: $URL$",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "https://github.com/lucaswotta/auracore"
+      }
+    }
+  },
+  "toast_invite_copied": {
+    "message": "¡Invitación copiada!"
+  },
+  "toast_invite_failed": {
+    "message": "No se pudo copiar la invitación"
+  },
+  "toast_capture_failed": {
+    "message": "No se pudo capturar esta pestaña: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Error starting tab capture"
+      }
+    }
+  }
+}

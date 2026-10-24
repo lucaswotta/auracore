@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>auracore</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body class="popup-body">
+  <div class="popup-shell">
+    <header class="popup-header">
+      <div class="brand">
+        <span class="brand-title">auracore</span>
+      </div>
+      <div class="header-actions">
+        <button id="share-btn" class="icon-btn" type="button" data-i18n-title="header_share_title" data-i18n-aria-label="header_share_label">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+        </button>
+        <button id="about-btn" class="icon-btn" type="button" data-i18n-title="header_about" data-i18n-aria-label="header_about">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="11"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </button>
+        <a id="github-btn" class="icon-btn" href="https://github.com/lucaswotta/auracore" target="_blank" rel="noopener noreferrer" data-i18n-title="header_github_title" data-i18n-aria-label="header_github_label">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </a>
+        <button id="support-btn" class="icon-btn" type="button" data-i18n-title="header_support" data-i18n-aria-label="header_support">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="stage" id="stage" data-i18n-aria-label="stage_label">
+      <canvas id="scene-back" aria-hidden="true"></canvas>
+
+      <div class="stage-track-wrap">
+        <div id="track-viewport" class="track-viewport">
+          <span id="target-label" class="track-title-stage" data-i18n="stage_searching"></span>
+        </div>
+        <div id="source-viewport" class="track-viewport">
+          <span id="track-subtitle" class="track-source"></span>
+        </div>
+      </div>
+
+      <img id="character-art" class="character-art" alt="" hidden>
+      <img class="about-emblem" src="icons/icon-off.svg" alt="" aria-hidden="true">
+      <img id="support-qr" class="support-qr" alt="">
+      <canvas id="scene-front" aria-hidden="true"></canvas>
+
+      <div class="power-socket">
+        <button id="orb" type="button" class="orb-3d" aria-pressed="false" data-i18n-title="orb_label" data-i18n-aria-label="orb_label">
+          <img id="orb-icon" src="icons/icon-off.svg" width="26" height="26" alt="" aria-hidden="true">
+          <span id="orb-speed" class="sr-only">80%</span>
+          <span id="orb-label" class="sr-only"></span>
+        </button>
+      </div>
+
+      <div id="share-toast" class="share-toast" hidden></div>
+    </section>
+
+    <main id="popup-main" class="popup-main" data-view="styles">
+      <section id="panel-styles" class="panel panel-styles" data-i18n-aria-label="panel_styles">
+        <div id="presets" class="presets-grid-4x4"></div>
+
+        <div id="variant-area" class="variant-area" hidden>
+          <span id="variant-label" class="variant-label"></span>
+          <div id="variants" class="variant-pills"></div>
+        </div>
+      </section>
+
+      <section id="panel-custom" class="panel panel-side" aria-labelledby="custom-title">
+        <header class="panel-head">
+          <button id="custom-back" class="back-btn" type="button" data-i18n-aria-label="panel_back">←</button>
+          <h2 id="custom-title" class="panel-title" data-i18n="style_custom"></h2>
+        </header>
+
+        <div id="mine-area" class="panel-block" hidden>
+          <h3 class="block-label" data-i18n="custom_my_styles"></h3>
+          <div id="mine" class="chip-row"></div>
+        </div>
+
+        <div class="panel-block">
+          <h3 class="block-label" data-i18n="custom_sound"></h3>
+          <div id="controls" class="control-list"></div>
+          <label class="check-row dj-btn-toggle"><input type="checkbox" id="link-pitch"><span class="dj-led" aria-hidden="true"></span><span data-i18n="custom_link_pitch"></span></label>
+        </div>
+
+        <div class="panel-block">
+          <h3 class="block-label" data-i18n="custom_orbit"></h3>
+          <div id="orbit" class="chip-row"></div>
+        </div>
+
+        <div class="panel-block">
+          <h3 class="block-label" data-i18n="custom_effects"></h3>
+          <label class="check-row dj-btn-toggle"><input type="checkbox" id="tape-stop"><span class="dj-led" aria-hidden="true"></span><span data-i18n="custom_tape_stop"></span></label>
+          <span class="row-label" data-i18n="custom_fade"></span>
+          <div id="fade" class="chip-row"></div>
+        </div>
+
+        <form id="save-form" class="save-form">
+          <input id="style-name" maxlength="24" data-i18n-placeholder="custom_name_placeholder" data-i18n-aria-label="custom_name_label" required>
+          <button type="submit" data-i18n="custom_save"></button>
+        </form>
+      </section>
+
+      <section id="panel-about" class="panel panel-side" aria-labelledby="about-title">
+        <header class="panel-head">
+          <button id="about-back" class="back-btn" type="button" data-i18n-aria-label="panel_back">←</button>
+          <h2 id="about-title" class="panel-title" data-i18n="about_title"></h2>
+        </header>
+        <div class="panel-block about-text">
+          <p data-i18n="about_what"></p>
+          <p data-i18n="about_how"></p>
+          <p data-i18n="about_capture"></p>
+          <p id="about-version" class="about-version"></p>
+        </div>
+      </section>
+
+      <section id="panel-support" class="panel panel-side" aria-labelledby="support-title">
+        <header class="panel-head">
+          <button id="support-back" class="back-btn" type="button" data-i18n-aria-label="panel_back">←</button>
+          <h2 id="support-title" class="panel-title" data-i18n="support_title"></h2>
+        </header>
+        <div class="panel-block about-text">
+          <p data-i18n="support_intro"></p>
+          <p data-i18n="support_kind"></p>
+          <p data-i18n="support_alternative"></p>
+        </div>
+        <div class="support-actions">
+          <button id="pix-copy" class="support-action" type="button" hidden></button>
+          <button id="sponsors-open" class="support-action" type="button">GitHub Sponsors</button>
+        </div>
+        <p class="support-hint" data-i18n="support_qr_hint"></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="styles.js"></script>
+  <script src="scenes.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+{
+  "ext_description": {
+    "message": "Slowed + reverb, sped up, nightcore, 8D, lo-fi and other remix styles on your tab audio, right in the browser."
+  },
+  "style_slowed": {
+    "message": "slowed + reverb"
+  },
+  "style_sped_up": {
+    "message": "sped up"
+  },
+  "style_nightcore": {
+    "message": "nightcore"
+  },
+  "style_daycore": {
+    "message": "daycore"
+  },
+  "style_vaporwave": {
+    "message": "vaporwave"
+  },
+  "style_8d": {
+    "message": "8D"
+  },
+  "style_bass": {
+    "message": "bass boosted"
+  },
+  "style_lofi": {
+    "message": "lo-fi"
+  },
+  "style_party_bathroom": {
+    "message": "bathroom at a party"
+  },
+  "style_sunday_night": {
+    "message": "sunday night"
+  },
+  "style_underwater": {
+    "message": "underwater"
+  },
+  "style_empty_arena": {
+    "message": "empty arena"
+  },
+  "style_rainy": {
+    "message": "in the rain"
+  },
+  "style_ethereal": {
+    "message": "ethereal"
+  },
+  "style_phonk": {
+    "message": "phonk"
+  },
+  "style_custom": {
+    "message": "custom"
+  },
+  "intensity_soft": {
+    "message": "soft"
+  },
+  "intensity_normal": {
+    "message": "standard"
+  },
+  "intensity_strong": {
+    "message": "intense"
+  },
+  "orbit_circle": {
+    "message": "circle"
+  },
+  "orbit_eight": {
+    "message": "figure eight"
+  },
+  "orbit_free": {
+    "message": "free"
+  },
+  "control_speed": {
+    "message": "speed"
+  },
+  "control_bass": {
+    "message": "bass"
+  },
+  "control_muffle": {
+    "message": "muffled"
+  },
+  "control_pitch": {
+    "message": "pitch"
+  },
+  "control_warmth": {
+    "message": "saturation"
+  },
+  "control_wobble": {
+    "message": "tape"
+  },
+  "control_chorus": {
+    "message": "chorus"
+  },
+  "control_vinyl": {
+    "message": "vinyl"
+  },
+  "control_reverb": {
+    "message": "reverb"
+  },
+  "control_room": {
+    "message": "room"
+  },
+  "control_spin": {
+    "message": "8D"
+  },
+  "control_rain": {
+    "message": "rain"
+  },
+  "control_water": {
+    "message": "water"
+  },
+  "header_share_title": {
+    "message": "Copy an invite to auracore"
+  },
+  "header_share_label": {
+    "message": "Invite someone to auracore"
+  },
+  "header_about": {
+    "message": "About auracore"
+  },
+  "header_github_title": {
+    "message": "Open auracore on GitHub to leave a star"
+  },
+  "header_github_label": {
+    "message": "Star on GitHub"
+  },
+  "header_support": {
+    "message": "Support auracore"
+  },
+  "stage_label": {
+    "message": "Current style scene"
+  },
+  "stage_searching": {
+    "message": "looking for music..."
+  },
+  "stage_active_tab": {
+    "message": "active tab"
+  },
+  "stage_playing_audio": {
+    "message": "playing audio"
+  },
+  "stage_active_elsewhere": {
+    "message": "active in another tab"
+  },
+  "orb_label": {
+    "message": "Turn auracore on or off"
+  },
+  "orb_on": {
+    "message": "on"
+  },
+  "orb_off": {
+    "message": "turn on"
+  },
+  "panel_styles": {
+    "message": "Styles"
+  },
+  "panel_back": {
+    "message": "Back to styles"
+  },
+  "variant_path": {
+    "message": "path"
+  },
+  "variant_path_label": {
+    "message": "8D path"
+  },
+  "variant_intensity_label": {
+    "message": "Intensity"
+  },
+  "custom_my_styles": {
+    "message": "my styles"
+  },
+  "custom_sound": {
+    "message": "sound"
+  },
+  "custom_link_pitch": {
+    "message": "pitch follows speed"
+  },
+  "custom_orbit": {
+    "message": "8D path"
+  },
+  "custom_orbit_off": {
+    "message": "off"
+  },
+  "custom_effects": {
+    "message": "effects"
+  },
+  "custom_tape_stop": {
+    "message": "tape stop on pause"
+  },
+  "custom_fade": {
+    "message": "fade at the end of the song"
+  },
+  "custom_fade_off": {
+    "message": "no fade"
+  },
+  "custom_name_placeholder": {
+    "message": "your style name"
+  },
+  "custom_name_label": {
+    "message": "Your style name"
+  },
+  "custom_save": {
+    "message": "save"
+  },
+  "custom_delete": {
+    "message": "Delete style"
+  },
+  "about_title": {
+    "message": "about"
+  },
+  "about_what": {
+    "message": "Hi, I'm Lucas. I built auracore so I could hear any song as slowed + reverb, nightcore or lo-fi without waiting for someone to upload that version."
+  },
+  "about_how": {
+    "message": "The effect plays only on the tab where you turned it on, and everything happens in your browser. Nothing you listen to is recorded or sent anywhere."
+  },
+  "about_capture": {
+    "message": "On Spotify and Amazon Music, Chrome shows a tab capture notice while the effect is on. That is how the effect reaches those songs."
+  },
+  "about_version": {
+    "message": "version $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.9.0"
+      }
+    }
+  },
+  "support_title": {
+    "message": "buy me a coffee?"
+  },
+  "support_intro": {
+    "message": "auracore is free and will stay that way. I build it in my spare time, between work and college."
+  },
+  "support_kind": {
+    "message": "If it's been playing along with your music, how about buying me a coffee? Any amount helps and keeps me going."
+  },
+  "support_alternative": {
+    "message": "If you can't, no worries: telling a friend or leaving a star on GitHub already makes my day."
+  },
+  "support_qr_hint": {
+    "message": "Scan the code above to open GitHub Sponsors on your phone."
+  },
+  "support_sponsors_alt": {
+    "message": "GitHub Sponsors QR code"
+  },
+  "toast_invite": {
+    "message": "Hear your music as slowed + reverb, nightcore, 8D and more, right in your browser: $URL$",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "https://github.com/lucaswotta/auracore"
+      }
+    }
+  },
+  "toast_invite_copied": {
+    "message": "Invite copied!"
+  },
+  "toast_invite_failed": {
+    "message": "Couldn't copy the invite"
+  },
+  "toast_capture_failed": {
+    "message": "Couldn't capture this tab: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Error starting tab capture"
+      }
+    }
+  }
+}

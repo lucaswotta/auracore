@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="16%" stop-color="#a5afbf"/>
+      <stop offset="28%" stop-color="#f6f8fc"/>
+      <stop offset="43%" stop-color="#8993a4"/>
+      <stop offset="53%" stop-color="#f4f7fc"/>
+      <stop offset="67%" stop-color="#b5bfcd"/>
+      <stop offset="80%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#838d9d"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#d5dce8"/>
+      <stop offset="100%" stop-color="#5f6979"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#chrome)"/>
+  <rect x="1.5" y="1.5" width="125" height="125" rx="26.5" fill="none" stroke="url(#edge)" stroke-width="2"/>
+  <g fill="#080a0f" stroke="#080a0f" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M 64,12 Q 64,64 32,64 Q 64,64 64,116 Q 64,64 96,64 Q 64,64 64,12 Z"/>
+    <path d="M 99,19 Q 99,32 92,32 Q 99,32 99,45 Q 99,32 106,32 Q 99,32 99,19 Z"/>
+  </g>
+</svg>

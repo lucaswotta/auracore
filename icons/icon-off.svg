@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <!-- Gradiente metálico cromado líquido principal -->
+    <linearGradient id="chrome-core" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="18%" stop-color="#f0f3f8"/>
+      <stop offset="38%" stop-color="#8a94a6"/>
+      <stop offset="48%" stop-color="#3b414f"/>
+      <stop offset="52%" stop-color="#ffffff"/>
+      <stop offset="68%" stop-color="#a4aebd"/>
+      <stop offset="85%" stop-color="#4d5464"/>
+      <stop offset="100%" stop-color="#eef2f9"/>
+    </linearGradient>
+
+    <!-- Gradiente de contorno chanfrado cromado -->
+    <linearGradient id="chrome-bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#a6b1c2"/>
+      <stop offset="50%" stop-color="#1e222a"/>
+      <stop offset="70%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#7a8597"/>
+    </linearGradient>
+
+    <!-- Reflexo de flare central -->
+    <radialGradient id="chrome-flare" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fundo preto puro com cantos squircle -->
+  <rect width="128" height="128" rx="28" fill="#050507"/>
+
+  <!-- Estrela Principal e Secundária Super Cromadas com Pontas Perfeitamente Alinhadas -->
+  <g fill="url(#chrome-core)" stroke="url(#chrome-bevel)" stroke-width="1.5" stroke-linejoin="round">
+    <!-- Estrela Grande de 4 Pontas (alinhamento rigoroso em X=64 e Y=64) -->
+    <path d="M 64,12 Q 64,64 32,64 Q 64,64 64,116 Q 64,64 96,64 Q 64,64 64,12 Z"/>
+    <!-- Estrela Menorzinho no Lado Direito (alinhamento rigoroso em X=99 e Y=32) -->
+    <path d="M 99,19 Q 99,32 92,32 Q 99,32 99,45 Q 99,32 106,32 Q 99,32 99,19 Z"/>
+  </g>
+
+  <!-- Brilho especular no cruzamento exato das estrelas -->
+  <circle cx="64" cy="64" r="14" fill="url(#chrome-flare)"/>
+  <circle cx="99" cy="32" r="6" fill="url(#chrome-flare)"/>
+</svg>

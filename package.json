@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "sh tools/package.sh"
+  }
+}
