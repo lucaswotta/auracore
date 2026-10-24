@@ -95,13 +95,13 @@ Enquanto a música toca, ela se mexe junto: respira, balança ou dá pulinhos, c
 
 ## Instalação
 
-O auracore ainda não está na Chrome Web Store. Para instalar a partir deste repositório:
+O auracore foi enviado à Chrome Web Store e ao addons.mozilla.org em 24 de outubro de 2026 e aguarda a análise das lojas. Até a aprovação, instale a partir deste repositório:
 
 1. Baixe ou clone o repositório.
 2. Abra `chrome://extensions` e ative o Modo do desenvolvedor.
 3. Clique em Carregar sem compactação e selecione a pasta do repositório.
 
-No Firefox, enquanto o auracore não está no addons.mozilla.org: rode `npm run package`, abra `about:debugging#/runtime/this-firefox`, clique em Carregar extensão temporária e escolha `dist/auracore-firefox.zip`. O Firefox remove extensões temporárias ao fechar.
+No Firefox: rode `npm run package`, abra `about:debugging#/runtime/this-firefox`, clique em Carregar extensão temporária e escolha `dist/auracore-firefox.zip`. O Firefox remove extensões temporárias ao fechar.
 
 ## Uso
 

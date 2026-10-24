@@ -95,13 +95,13 @@ While the music plays she moves with it, a little breathing, swaying or bouncing
 
 ## Installation
 
-auracore is not in the Chrome Web Store yet. To install it from this repository:
+auracore was submitted to the Chrome Web Store and to addons.mozilla.org on October 24, 2026, and is awaiting review. Until it is approved, install it from this repository:
 
 1. Download or clone the repository.
 2. Open `chrome://extensions` and turn on Developer mode.
 3. Click Load unpacked and select the repository folder.
 
-In Firefox, until auracore is on addons.mozilla.org: run `npm run package`, open `about:debugging#/runtime/this-firefox`, click Load Temporary Add-on and pick `dist/auracore-firefox.zip`. Firefox removes temporary add-ons when it closes.
+In Firefox: run `npm run package`, open `about:debugging#/runtime/this-firefox`, click Load Temporary Add-on and pick `dist/auracore-firefox.zip`. Firefox removes temporary add-ons when it closes.
 
 ## Usage
 
