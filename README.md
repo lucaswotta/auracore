@@ -15,8 +15,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/sponsors/lucaswotta"><img src="docs/coffee-en.webp" alt="Buy me a coffee on GitHub Sponsors" width="240"></a>
-  <a href="https://github.com/lucaswotta/auracore"><img src="docs/star-en.webp" alt="Star auracore on GitHub" width="240"></a>
+  <a href="https://github.com/lucaswotta/auracore"><img src="https://img.shields.io/github/stars/lucaswotta/auracore?style=social" alt="Star auracore on GitHub"></a>
+  <a href="https://ko-fi.com/lucaswotta"><img src="https://img.shields.io/badge/Ko--fi-Support-FF5E5B?logo=ko-fi&logoColor=white" alt="Support auracore on Ko-fi"></a>
+  <a href="https://github.com/sponsors/lucaswotta"><img src="https://img.shields.io/badge/GitHub-Sponsor-EA4AAA?logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub"></a>
+  <img src="https://img.shields.io/badge/Chrome-116%2B-4285F4?logo=googlechrome&logoColor=white" alt="Chrome 116+">
+  <img src="https://img.shields.io/badge/Firefox-128%2B-FF7139?logo=firefoxbrowser&logoColor=white" alt="Firefox 128+">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Flucaswotta%2Fauracore%2Fmain%2Fmanifest.json&query=%24.version&label=version&color=5865f2" alt="version">
 </p>
 
 Slowed + reverb, nightcore, lo-fi and 12 more remix styles on any song, without waiting for someone to upload that version. auracore applies the remix live, right in your browser, to whatever you are already listening to.
@@ -125,11 +129,10 @@ Style, intensity, fade, tape stop and saved styles are stored in `chrome.storage
 
 ## Support
 
-auracore is free and will stay that way. I work on it in my spare time, between work and college. If it has become part of your music, you can buy me a coffee through GitHub Sponsors, once or every month. And if you can't, that's fine: telling a friend or leaving a star on the repository already makes my day.
+auracore is free and will stay that way. I work on it in my spare time, between work and college. If it has become part of your music, you can buy me a coffee on Ko-fi, once or every month, or sponsor me on GitHub. And if you can't, that's fine: telling a friend or leaving a star on the repository already makes my day.
 
 <p align="center">
-  <a href="https://github.com/sponsors/lucaswotta"><img src="docs/coffee-en.webp" alt="Buy me a coffee on GitHub Sponsors" width="240"></a>
-  <a href="https://github.com/lucaswotta/auracore"><img src="docs/star-en.webp" alt="Star auracore on GitHub" width="240"></a>
+  <a href="https://ko-fi.com/lucaswotta"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=6" height="40" alt="Support auracore on Ko-fi"></a>
 </p>
 
 ## License and credits

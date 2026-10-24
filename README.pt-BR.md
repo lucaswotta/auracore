@@ -15,8 +15,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/sponsors/lucaswotta"><img src="docs/coffee-pt-BR.webp" alt="Me paga um cafezinho pelo GitHub Sponsors" width="240"></a>
-  <a href="https://github.com/lucaswotta/auracore"><img src="docs/star-pt-BR.webp" alt="Deixe uma estrela no GitHub" width="240"></a>
+  <a href="https://github.com/lucaswotta/auracore"><img src="https://img.shields.io/github/stars/lucaswotta/auracore?style=social" alt="Deixe uma estrela no GitHub"></a>
+  <a href="https://ko-fi.com/lucaswotta"><img src="https://img.shields.io/badge/Ko--fi-Apoie-FF5E5B?logo=ko-fi&logoColor=white" alt="Apoie o auracore no Ko-fi"></a>
+  <a href="https://github.com/sponsors/lucaswotta"><img src="https://img.shields.io/badge/GitHub-Patrocine-EA4AAA?logo=githubsponsors&logoColor=white" alt="Patrocine no GitHub"></a>
+  <img src="https://img.shields.io/badge/Chrome-116%2B-4285F4?logo=googlechrome&logoColor=white" alt="Chrome 116+">
+  <img src="https://img.shields.io/badge/Firefox-128%2B-FF7139?logo=firefoxbrowser&logoColor=white" alt="Firefox 128+">
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Flucaswotta%2Fauracore%2Fmain%2Fmanifest.json&query=%24.version&label=vers%C3%A3o&color=5865f2" alt="versão">
 </p>
 
 Slowed + reverb, nightcore, lo-fi e mais 12 estilos de remix em qualquer música, sem esperar alguém subir essa versão. O auracore aplica o remix ao vivo, direto no navegador, no que você já está ouvindo.
@@ -125,17 +129,12 @@ Estilo, intensidade, fade, tape stop e estilos salvos ficam em `chrome.storage.l
 
 ## Apoio
 
-O auracore é gratuito e vai continuar assim. Eu cuido dele nas horas vagas, entre o trabalho e a faculdade. Se ele já embala as suas músicas, que tal me pagar um cafezinho? Vale Pix ou GitHub Sponsors, uma vez ou todo mês. E se não der, tudo bem: indicar para um amigo ou deixar uma estrela no repositório já faz o meu dia.
+O auracore é gratuito e vai continuar assim. Eu cuido dele nas horas vagas, entre o trabalho e a faculdade. Se ele já embala as suas músicas, que tal me pagar um cafezinho no Ko-fi, uma vez ou todo mês? Também dá para patrocinar pelo GitHub Sponsors. E se não der, tudo bem: indicar para um amigo ou deixar uma estrela no repositório já faz o meu dia.
 
 <p align="center">
-  <a href="https://github.com/sponsors/lucaswotta"><img src="docs/coffee-pt-BR.webp" alt="Me paga um cafezinho pelo GitHub Sponsors" width="240"></a>
-  <a href="https://github.com/lucaswotta/auracore"><img src="docs/star-pt-BR.webp" alt="Deixe uma estrela no GitHub" width="240"></a>
+  <a href="https://ko-fi.com/lucaswotta"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=6" height="40" alt="Apoie o auracore no Ko-fi"></a>
 </p>
 
-<p align="center">
-  <img src="support/pix-qr.svg" alt="QR do Pix" width="180"><br>
-  Chave Pix aleatória: <code>16a5c103-0372-42a7-8b40-0d29c2a418f0</code>
-</p>
 
 ## Licença e créditos
 
