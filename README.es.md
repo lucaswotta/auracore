@@ -75,7 +75,7 @@ auracore es una extensión para Chrome y Firefox. Elige un estilo y el audio de 
 
 ## Conoce a arabot
 
-<img src="docs/readme-character.webp" alt="arabot sosteniendo el logo de auracore" width="200" align="right">
+<img src="docs/arabot.webp" alt="arabot sentada, guiñando un ojo y señalando" width="230" align="right">
 
 arabot es la cara de auracore: una pequeña figura de cromo líquido, con cabello negro largo y ondulado, ojos marrones y pecas. Cambia de ropa y de escenario en cada estilo. En lo-fi estudia en su escritorio junto a una gatita siamesa, en el baño de la fiesta se retoca el labial frente a un espejo neón, bajo la lluvia abre los brazos a la tormenta y en etéreo flota.
 

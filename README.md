@@ -75,7 +75,7 @@ auracore is a Chrome and Firefox extension. Pick a style and the tab's audio cha
 
 ## Meet arabot
 
-<img src="docs/readme-character.webp" alt="arabot holding the auracore logo" width="200" align="right">
+<img src="docs/arabot.webp" alt="arabot sitting, winking and pointing" width="230" align="right">
 
 arabot is the face of auracore: a little liquid-chrome figure with long wavy black hair, warm brown eyes and freckles. She changes outfits and scenery with every style. In lo-fi she studies at her desk next to a Siamese cat, in the party bathroom she fixes her lipstick in a neon mirror, in the rain she opens her arms to the storm, and in ethereal she floats.
 
