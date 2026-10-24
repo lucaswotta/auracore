@@ -245,8 +245,8 @@
   "support_pix_alt": {
     "message": "QR do Pix"
   },
-  "support_sponsors_alt": {
-    "message": "QR do GitHub Sponsors"
+  "support_kofi_alt": {
+    "message": "QR do Ko-fi"
   },
   "toast_invite": {
     "message": "Ouça suas músicas em slowed + reverb, nightcore, 8D e outros estilos direto no navegador: $URL$",

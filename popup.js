@@ -1,6 +1,6 @@
 const $ = (id) => document.getElementById(id);
 const REPO_URL = 'https://github.com/lucaswotta/auracore';
-const SPONSORS_URL = 'https://github.com/sponsors/lucaswotta';
+const KOFI_URL = 'https://ko-fi.com/lucaswotta';
 const AMO_PAGE = 'https://addons.mozilla.org/firefox/addon/auracore/';
 // BR Code estático da chave aleatória, gerado junto com support/pix-qr.svg. Pix só existe no Brasil,
 // então o painel o mostra apenas com o Chrome em português do Brasil.
@@ -986,7 +986,7 @@ $('custom-back')?.addEventListener?.('click', () => showView('styles'));
 $('about-back')?.addEventListener?.('click', () => showView('styles'));
 $('support-btn')?.addEventListener?.('click', () => showView('support'));
 $('support-back')?.addEventListener?.('click', () => showView('styles'));
-$('sponsors-open')?.addEventListener?.('click', () => chrome.tabs?.create?.({ url: SPONSORS_URL }));
+$('kofi-open')?.addEventListener?.('click', () => chrome.tabs?.create?.({ url: KOFI_URL }));
 $('pix-copy')?.addEventListener?.('click', async () => {
   try {
     await navigator.clipboard.writeText(PIX_CODE);
@@ -999,8 +999,8 @@ $('pix-copy')?.addEventListener?.('click', async () => {
 if (PIX_LOCALE && $('pix-copy')) $('pix-copy').textContent = msg('support_pix_copy');
 if ($('pix-copy')) $('pix-copy').hidden = !PIX_LOCALE;
 if ($('support-qr')) {
-  $('support-qr').src = PIX_LOCALE ? 'support/pix-qr.svg' : 'support/sponsors-qr.svg';
-  $('support-qr').alt = msg(PIX_LOCALE ? 'support_pix_alt' : 'support_sponsors_alt');
+  $('support-qr').src = PIX_LOCALE ? 'support/pix-qr.svg' : 'support/kofi-qr.svg';
+  $('support-qr').alt = msg(PIX_LOCALE ? 'support_pix_alt' : 'support_kofi_alt');
 }
 $('link-pitch')?.addEventListener?.('change', () => editStyle({ linkPitch: $('link-pitch').checked }));
 $('tape-stop')?.addEventListener?.('change', () => save({ tapeStop: $('tape-stop').checked }));

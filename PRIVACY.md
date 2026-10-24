@@ -18,7 +18,7 @@ auracore does not collect, sell or share personal data. It has no account, no an
 
 **Site access.** auracore runs on every site so it can find audio and video players before you open the popup. It reads only the media players, the page title and address, and the track information the site gives the browser. You can limit the sites it runs on in `chrome://extensions` → auracore → Details → Site access.
 
-**Links.** The GitHub and GitHub Sponsors buttons open those pages in a new tab; from then on, GitHub's privacy policy applies.
+**Links.** The GitHub and Ko-fi buttons open those pages in a new tab; from then on, the privacy policy of that site applies.
 
 Questions: https://github.com/lucaswotta/auracore/issues
 
@@ -38,7 +38,7 @@ O auracore não coleta, vende nem compartilha dados pessoais. Não tem conta, an
 
 **Acesso aos sites.** O auracore roda em todos os sites para encontrar players de áudio e vídeo antes de você abrir o popup. Ele lê apenas os players de mídia, o título e o endereço da página e as informações da faixa que o site entrega ao navegador. Você pode limitar os sites em `chrome://extensions` → auracore → Detalhes → Acesso a sites.
 
-**Links.** Os botões do GitHub e do GitHub Sponsors abrem essas páginas em uma nova aba; a partir daí vale a política de privacidade do GitHub.
+**Links.** Os botões do GitHub e do Ko-fi abrem essas páginas em uma nova aba; a partir daí vale a política de privacidade do site aberto.
 
 Dúvidas: https://github.com/lucaswotta/auracore/issues
 
@@ -58,6 +58,6 @@ auracore no recopila, vende ni comparte datos personales. No tiene cuenta, anal�
 
 **Acceso a sitios.** auracore se ejecuta en todos los sitios para encontrar reproductores de audio y video antes de que abras el popup. Solo lee los reproductores multimedia, el título y la dirección de la página y la información de la canción que el sitio entrega al navegador. Puedes limitar los sitios en `chrome://extensions` → auracore → Detalles → Acceso a sitios.
 
-**Enlaces.** Los botones de GitHub y GitHub Sponsors abren esas páginas en una pestaña nueva; desde ahí se aplica la política de privacidad de GitHub.
+**Enlaces.** Los botones de GitHub y Ko-fi abren esas páginas en una pestaña nueva; desde ahí se aplica la política de privacidad del sitio abierto.
 
 Preguntas: https://github.com/lucaswotta/auracore/issues

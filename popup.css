@@ -1641,7 +1641,7 @@ body.popup-body {
   color: var(--text-secondary);
 }
 
-/* Botões dividem a largura do painel por igual; sem o Pix, o Sponsors ocupa a linha toda. */
+/* Botões dividem a largura do painel por igual; sem o Pix, o Ko-fi ocupa a linha toda. */
 .support-actions {
   display: flex;
   gap: 8px;

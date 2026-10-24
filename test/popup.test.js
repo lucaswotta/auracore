@@ -486,8 +486,8 @@ test('estrela abre o repositório e coração abre o painel de apoio', async () 
   assert.equal(popup.get('popup-main').dataset.view, 'support');
   assert.equal(popup.get('stage')['aria-label'], 'auracore');
   assert.equal(popup.get('character-art').hidden, true);
-  popup.get('sponsors-open').click();
-  assert.equal(popup.createdTabs.at(-1).url, 'https://github.com/sponsors/lucaswotta');
+  popup.get('kofi-open').click();
+  assert.equal(popup.createdTabs.at(-1).url, 'https://ko-fi.com/lucaswotta');
   popup.get('support-back').click();
   assert.equal(popup.get('popup-main').dataset.view, 'styles');
 });
@@ -504,12 +504,12 @@ test('Chrome em português do Brasil mostra o Pix e copia o código', async () =
   assert.equal(popup.get('share-toast').textContent, 'Código Pix copiado!');
 });
 
-test('outros idiomas mostram só o GitHub Sponsors', async () => {
+test('outros idiomas mostram só o Ko-fi', async () => {
   for (const uiLanguage of ['en-US', 'es', 'pt-PT']) {
     const popup = createPopupHarness({}, { uiLanguage });
     await flush();
     assert.equal(popup.get('pix-copy').hidden, true, uiLanguage);
-    assert.equal(popup.get('support-qr').src, 'support/sponsors-qr.svg', uiLanguage);
+    assert.equal(popup.get('support-qr').src, 'support/kofi-qr.svg', uiLanguage);
   }
 });
 

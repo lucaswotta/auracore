@@ -237,10 +237,10 @@
     "message": "Si no puedes, no pasa nada: recomendarlo a un amigo o dejar una estrella en GitHub ya me alegra el día."
   },
   "support_qr_hint": {
-    "message": "Escanea el código de arriba para abrir GitHub Sponsors en tu teléfono."
+    "message": "Escanea el código de arriba para abrir Ko-fi en tu teléfono."
   },
-  "support_sponsors_alt": {
-    "message": "QR de GitHub Sponsors"
+  "support_kofi_alt": {
+    "message": "QR de Ko-fi"
   },
   "toast_invite": {
     "message": "Escucha tu música en slowed + reverb, nightcore, 8D y más, directamente en el navegador: $URL$",

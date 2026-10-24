@@ -11,7 +11,7 @@ Direção: ser o lugar onde se ouve qualquer música no estilo dos remixes da in
 - Fade entre músicas e tape stop.
 - Ambientes de chuva e água gerados por IA, nivelados por loudness e emendados sem estalo.
 - Interface em inglês, espanhol e português do Brasil.
-- Painel de apoio com GitHub Sponsors e Pix.
+- Painel de apoio com Ko-fi e Pix.
 - Aplicação de estilo recebido por link (`?auracore=`); o popup não gera esses links.
 
 ## Fidelidade dos estilos

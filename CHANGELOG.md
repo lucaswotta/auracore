@@ -12,4 +12,4 @@ First public release.
 - Track and artist from the site's media information, scrolling behind the character when they do not fit.
 - Interface in English, Spanish and Brazilian Portuguese, following the browser language.
 - Firefox 128 or newer, built by `npm run package` as `dist/auracore-firefox.zip`; protected services get speed and pitch only there.
-- Support panel with GitHub Sponsors, and Pix in Brazilian Portuguese.
+- Support panel with Ko-fi, and Pix in Brazilian Portuguese.
