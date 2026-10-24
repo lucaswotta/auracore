@@ -3,7 +3,7 @@
 //
 // Uso: node tools/popup-screenshot.mjs [--out arquivo.png] [--style "lo-fi"] [--variant intenso]
 //                                      [--view custom|about|support] [--lang pt-BR] [--wait 1500]
-//                                      [--demo-audio] [--layout] [--track "Faixa • Artista"]
+//                                      [--demo-audio] [--layout] [--track "Faixa • Artista"] [--clean-stage]
 //
 // --layout imprime, em JSON, rolagem da página e do painel aberto e nomes de estilo que não couberam
 // no botão.
@@ -30,6 +30,7 @@ const { values: options } = parseArgs({
     scroll: { type: 'string' },
     layout: { type: 'boolean', default: false },
     track: { type: 'string' },
+    'clean-stage': { type: 'boolean', default: false },
   },
 });
 
@@ -150,6 +151,10 @@ try {
       activeTabStatus = { track: ${JSON.stringify(track)}, artist: ${JSON.stringify(artist)}, playing: true };
       render();`);
     await sleep(200);
+  }
+  // Palco sem título da faixa, para galerias de estilos.
+  if (options['clean-stage']) {
+    await evaluate(`document.head.insertAdjacentHTML('beforeend', '<style>.stage-track-wrap { visibility: hidden; }</style>')`);
   }
   if (options.scroll) {
     await evaluate(`(() => {
