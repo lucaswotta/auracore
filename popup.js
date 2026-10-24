@@ -810,6 +810,11 @@ function save(changes) {
 // popup naquela aba; por isso ela começa e termina aqui, junto com o liga/desliga.
 async function syncCapture() {
   if (!activeTab?.id || onHere() === captured || (!captured && tabEffects !== 'blocked')) return;
+  // Sem captura de aba (Firefox), o site protegido fica só com velocidade e tom.
+  if (!chrome.tabCapture) {
+    if (onHere()) showToast(msg('toast_speed_only'));
+    return;
+  }
   try {
     if (captured) {
       await chrome.runtime.sendMessage({ target: 'background', type: 'capture-stop', tabId: activeTab.id });

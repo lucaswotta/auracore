@@ -43,7 +43,7 @@ class Element {
   append(...children) { this.children.push(...children); }
 }
 
-function createPopupHarness(initial = {}, { effects = 'ok', failCapture = false, updateUrl, target = 4, withoutScripts = false, tabUrl = 'https://www.youtube.com/watch?v=abc123xyz', tabTitle = 'Música de Teste', trackTitle = 'Música Tocando', uiLanguage = 'pt-BR', metadata = {} } = {}) {
+function createPopupHarness(initial = {}, { effects = 'ok', failCapture = false, updateUrl, target = 4, withoutScripts = false, tabUrl = 'https://www.youtube.com/watch?v=abc123xyz', tabTitle = 'Música de Teste', trackTitle = 'Música Tocando', uiLanguage = 'pt-BR', metadata = {}, tabCapture = true } = {}) {
   const elements = new Map();
   // Elementos do popup.html com data-i18n*, para a tradução da página ter onde escrever.
   const translatable = [...readFileSync(join(__dirname, '..', 'popup.html'), 'utf8').matchAll(/<[a-z0-9]+\b[^>]*data-i18n[^>]*>/g)].map(([tag]) => {
@@ -116,9 +116,9 @@ function createPopupHarness(initial = {}, { effects = 'ok', failCapture = false,
     scripting: {
       async executeScript(options) { injections.push(options); injected = true; },
     },
-    tabCapture: {
+    tabCapture: tabCapture ? {
       async getMediaStreamId({ targetTabId }) { streamRequests.push(targetTabId); return `stream-${targetTabId}`; },
-    },
+    } : undefined,
   };
   const navigator = {
     clipboard: {
@@ -702,4 +702,15 @@ test('título que cabe antes da personagem fica parado', async () => {
   popup.get('character-art').getBoundingClientRect = () => ({ left: 150, width: 180 });
   await flush();
   assert.equal(popup.get('target-label').classList.classes.has('marquee'), false);
+});
+
+test('sem captura de aba, site protegido avisa que só velocidade e tom mudam', async () => {
+  const popup = createPopupHarness({ enabled: false }, { effects: 'blocked', tabCapture: false });
+  await flush();
+  popup.get('presets').children.find((button) => button.textContent === 'lo-fi').click();
+  await flush();
+  await flush();
+  assert.equal(popup.streamRequests.length, 0);
+  assert.equal(popup.sent.some((message) => message.type === 'capture-start'), false);
+  assert.match(popup.get('share-toast').textContent, /só a velocidade e o tom/);
 });

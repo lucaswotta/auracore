@@ -265,5 +265,8 @@
         "example": "Error starting tab capture"
       }
     }
+  },
+  "toast_speed_only": {
+    "message": "This site protects its audio: in this browser, only speed and pitch can change."
   }
 }
