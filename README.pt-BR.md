@@ -16,6 +16,7 @@
 
 <p align="center">
   <a href="https://github.com/sponsors/lucaswotta"><img src="docs/coffee-pt-BR.webp" alt="Me paga um cafezinho pelo GitHub Sponsors" width="240"></a>
+  <a href="https://github.com/lucaswotta/auracore"><img src="docs/star-pt-BR.webp" alt="Deixe uma estrela no GitHub" width="240"></a>
 </p>
 
 Slowed + reverb, nightcore, lo-fi e mais 12 estilos de remix em qualquer música, sem esperar alguém subir essa versão. O auracore aplica o remix ao vivo, direto no navegador, no que você já está ouvindo.
@@ -128,6 +129,7 @@ O auracore é gratuito e vai continuar assim. Eu cuido dele nas horas vagas, ent
 
 <p align="center">
   <a href="https://github.com/sponsors/lucaswotta"><img src="docs/coffee-pt-BR.webp" alt="Me paga um cafezinho pelo GitHub Sponsors" width="240"></a>
+  <a href="https://github.com/lucaswotta/auracore"><img src="docs/star-pt-BR.webp" alt="Deixe uma estrela no GitHub" width="240"></a>
 </p>
 
 <p align="center">
