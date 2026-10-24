@@ -11,7 +11,7 @@ Extensión para Chrome que reproduce el audio de cualquier pestaña en los estil
 
 ## Requisitos
 
-- Chrome 116 o superior. Otros navegadores basados en Chromium no se han probado.
+- Chrome 116 o superior, o Firefox 128 o superior. Otros navegadores no se han probado.
 - Node.js 22 o superior, solo para ejecutar las pruebas.
 
 ## Instalación
@@ -21,6 +21,8 @@ auracore todavía no está en la Chrome Web Store. Para instalarlo desde este re
 1. Descarga o clona el repositorio.
 2. Abre `chrome://extensions` y activa el Modo de desarrollador.
 3. Haz clic en Cargar descomprimida y selecciona la carpeta del repositorio.
+
+En Firefox, mientras auracore no esté en addons.mozilla.org: ejecuta `npm run package`, abre `about:debugging#/runtime/this-firefox`, haz clic en Cargar complemento temporal y elige `dist/auracore-firefox.zip`. Firefox quita los complementos temporales al cerrarse.
 
 ## Uso
 
@@ -41,7 +43,8 @@ El estilo, la intensidad, el fade, el tape stop y los estilos guardados se almac
 
 - En servicios con reproducción protegida, como Spotify y Amazon Music, los efectos pasan por la captura de pestaña de Chrome, que muestra un indicador de captura mientras el efecto está activo. Detener la captura desde ese indicador apaga auracore en esa pestaña.
 - auracore se ejecuta en todos los sitios para encontrar reproductores que empiezan antes de abrir el popup. Puedes limitar el acceso por sitio en `chrome://extensions` → auracore → Detalles.
-- Firefox y Safari no son compatibles.
+- Firefox no tiene captura de pestaña, así que en los servicios con reproducción protegida solo cambian la velocidad y el tono; los demás efectos necesitan Chrome.
+- Safari no es compatible.
 
 ## Desarrollo
 

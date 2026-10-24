@@ -11,7 +11,7 @@ Chrome extension that plays the audio of any tab in internet remix styles, such 
 
 ## Requirements
 
-- Chrome 116 or newer. Other Chromium-based browsers have not been tested.
+- Chrome 116 or newer, or Firefox 128 or newer. Other browsers have not been tested.
 - Node.js 22 or newer, only to run the tests.
 
 ## Installation
@@ -21,6 +21,8 @@ auracore is not in the Chrome Web Store yet. To install it from this repository:
 1. Download or clone the repository.
 2. Open `chrome://extensions` and turn on Developer mode.
 3. Click Load unpacked and select the repository folder.
+
+In Firefox, until auracore is on addons.mozilla.org: run `npm run package`, open `about:debugging#/runtime/this-firefox`, click Load Temporary Add-on and pick `dist/auracore-firefox.zip`. Firefox removes temporary add-ons when it closes.
 
 ## Usage
 
@@ -41,7 +43,8 @@ Style, intensity, fade, tape stop and saved styles are stored in `chrome.storage
 
 - On services with protected playback, such as Spotify and Amazon Music, effects go through Chrome tab capture, and Chrome shows a capture indicator while the effect is on. Stopping the capture from that indicator turns auracore off on that tab.
 - auracore runs on every site so it can find players that start before the popup opens. Access can be limited per site in `chrome://extensions` → auracore → Details.
-- Firefox and Safari are not supported.
+- Firefox has no tab capture, so on services with protected playback only speed and pitch change there; the other effects need Chrome.
+- Safari is not supported.
 
 ## Development
 

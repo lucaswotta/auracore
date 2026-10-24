@@ -11,7 +11,7 @@ Extensão para Chrome que toca o áudio de qualquer aba nos estilos de remix da 
 
 ## Requisitos
 
-- Chrome 116 ou superior. Outros navegadores baseados em Chromium não foram testados.
+- Chrome 116 ou superior, ou Firefox 128 ou superior. Outros navegadores não foram testados.
 - Node.js 22 ou superior, só para rodar os testes.
 
 ## Instalação
@@ -21,6 +21,8 @@ O auracore ainda não está na Chrome Web Store. Para instalar a partir deste re
 1. Baixe ou clone o repositório.
 2. Abra `chrome://extensions` e ative o Modo do desenvolvedor.
 3. Clique em Carregar sem compactação e selecione a pasta do repositório.
+
+No Firefox, enquanto o auracore não está no addons.mozilla.org: rode `npm run package`, abra `about:debugging#/runtime/this-firefox`, clique em Carregar extensão temporária e escolha `dist/auracore-firefox.zip`. O Firefox remove extensões temporárias ao fechar.
 
 ## Uso
 
@@ -41,7 +43,8 @@ Estilo, intensidade, fade, tape stop e estilos salvos ficam em `chrome.storage.l
 
 - Em serviços com reprodução protegida, como Spotify e Amazon Music, os efeitos passam pela captura de aba do Chrome, que mostra um indicador de captura enquanto o efeito estiver ligado. Encerrar a captura por esse indicador desliga o auracore naquela aba.
 - O auracore roda em todos os sites para encontrar players que começam antes de o popup abrir. Dá para limitar o acesso por site em `chrome://extensions` → auracore → Detalhes.
-- Firefox e Safari não são suportados.
+- O Firefox não tem captura de aba, então nos serviços com reprodução protegida só a velocidade e o tom mudam nele; os outros efeitos precisam do Chrome.
+- Safari não é suportado.
 
 ## Desenvolvimento
 
