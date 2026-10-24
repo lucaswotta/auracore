@@ -18,7 +18,7 @@
   <a href="https://github.com/sponsors/lucaswotta"><img src="docs/coffee-pt-BR.webp" alt="Me paga um cafezinho pelo GitHub Sponsors" width="240"></a>
 </p>
 
-Oi, eu sou o Lucas. Criei o auracore porque queria ouvir qualquer música em slowed + reverb, nightcore ou lo-fi sem depender de alguém ter subido essa versão no YouTube. Agora o remix acontece direto no seu navegador, ao vivo, no que você já está ouvindo.
+Slowed + reverb, nightcore, lo-fi e mais 12 estilos de remix em qualquer música, sem esperar alguém subir essa versão. O auracore aplica o remix ao vivo, direto no navegador, no que você já está ouvindo.
 
 O auracore é uma extensão para Chrome e Firefox. Escolha um estilo e o áudio da aba muda na hora: no YouTube, YouTube Music, Spotify, Deezer, SoundCloud e outros players.
 
