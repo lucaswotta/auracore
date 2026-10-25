@@ -25,7 +25,13 @@
 
 Slowed + reverb, nightcore, lo-fi e mais 12 estilos de remix em qualquer música, sem esperar alguém subir essa versão. O auracore aplica o remix ao vivo, direto no navegador, no que você já está ouvindo.
 
-O auracore é uma extensão para Chrome e Firefox. Escolha um estilo e o áudio da aba muda na hora: no YouTube, YouTube Music, Spotify, Deezer, SoundCloud e outros players.
+O auracore é uma extensão para Chrome, Edge e Firefox. Escolha um estilo e o áudio da aba muda na hora: no YouTube, YouTube Music, Spotify, Deezer, SoundCloud e outros players.
+
+<p align="center">
+  <a href="https://microsoftedge.microsoft.com/addons/detail/auracore/eoijcnmpkocgebbdolcipnbhgkhknmbo"><img src="docs/stores/edge-pt-BR.webp" alt="Disponível no Edge Add-ons" width="236"></a>
+  <img src="docs/stores/chrome-pt-BR.webp" alt="Em breve na Chrome Web Store" width="236">
+  <img src="docs/stores/firefox-pt-BR.webp" alt="Em breve no Firefox Add-ons" width="236">
+</p>
 
 <p align="center">
   <img src="docs/popup-pt-BR.webp" alt="Popup do auracore com o estilo lo-fi ligado" width="340">
@@ -90,12 +96,14 @@ Enquanto a música toca, ela se mexe junto: respira, balança ou dá pulinhos, c
 
 ## Requisitos
 
-- Chrome 116 ou superior, ou Firefox 128 ou superior. Outros navegadores não foram testados.
+- Chrome 116 ou superior, Microsoft Edge 116 ou superior, ou Firefox 128 ou superior. Outros navegadores não foram testados.
 - Node.js 22 ou superior, só para rodar os testes.
 
 ## Instalação
 
-O auracore foi enviado à Chrome Web Store e ao addons.mozilla.org em 24 de outubro de 2026 e aguarda a análise das lojas. Até a aprovação, instale a partir deste repositório:
+No Microsoft Edge, instale o auracore pelo [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/auracore/eoijcnmpkocgebbdolcipnbhgkhknmbo).
+
+O auracore foi enviado à Chrome Web Store e ao addons.mozilla.org em 24 de outubro de 2026 e aguarda a análise das lojas. Até a aprovação, instale no Chrome ou no Firefox a partir deste repositório:
 
 1. Baixe ou clone o repositório.
 2. Abra `chrome://extensions` e ative o Modo do desenvolvedor.
