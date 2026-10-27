@@ -47,7 +47,6 @@ Receitas de referência; os testes automatizados da suíte usam simulações de 
 - Firefox para Android (o desktop já roda a partir do 128).
 - Testes de DSP offline e integração no navegador via CDP.
 - Verificar a marca "auracore" no INPI e no TMview antes do lançamento.
-- Publicação na Chrome Web Store.
 
 ## Fora de escopo
 

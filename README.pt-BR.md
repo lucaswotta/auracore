@@ -18,7 +18,7 @@
   <a href="https://github.com/lucaswotta/auracore"><img src="https://img.shields.io/github/stars/lucaswotta/auracore?style=social" alt="Deixe uma estrela no GitHub"></a>
   <a href="https://ko-fi.com/lucaswotta"><img src="https://img.shields.io/badge/Ko--fi-Apoie-FF5E5B?logo=ko-fi&logoColor=white" alt="Apoie o auracore no Ko-fi"></a>
   <a href="https://github.com/sponsors/lucaswotta"><img src="https://img.shields.io/badge/GitHub-Patrocine-EA4AAA?logo=githubsponsors&logoColor=white" alt="Patrocine no GitHub"></a>
-  <img src="https://img.shields.io/badge/Chrome-116%2B-4285F4?logo=googlechrome&logoColor=white" alt="Chrome 116+">
+  <a href="https://chromewebstore.google.com/detail/auracore/gdimfnfkcbhfkmopkgbkjnjbmbpbipni"><img src="https://img.shields.io/badge/Chrome-116%2B-4285F4?logo=googlechrome&logoColor=white" alt="Chrome 116+"></a>
   <img src="https://img.shields.io/badge/Firefox-128%2B-FF7139?logo=firefoxbrowser&logoColor=white" alt="Firefox 128+">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Flucaswotta%2Fauracore%2Fmain%2Fmanifest.json&query=%24.version&label=vers%C3%A3o&color=5865f2" alt="versão">
 </p>
@@ -29,7 +29,7 @@ O auracore é uma extensão para Chrome, Edge e Firefox. Escolha um estilo e o �
 
 <p align="center">
   <a href="https://microsoftedge.microsoft.com/addons/detail/auracore/eoijcnmpkocgebbdolcipnbhgkhknmbo"><img src="docs/stores/edge-pt-BR.webp" alt="Disponível no Edge Add-ons" width="236"></a>
-  <img src="docs/stores/chrome-pt-BR.webp" alt="Em breve na Chrome Web Store" width="236">
+  <a href="https://chromewebstore.google.com/detail/auracore/gdimfnfkcbhfkmopkgbkjnjbmbpbipni"><img src="docs/stores/chrome-pt-BR.webp" alt="Disponível na Chrome Web Store" width="236"></a>
   <img src="docs/stores/firefox-pt-BR.webp" alt="Em breve no Firefox Add-ons" width="236">
 </p>
 
@@ -101,15 +101,15 @@ Enquanto a música toca, ela se mexe junto: respira, balança ou dá pulinhos, c
 
 ## Instalação
 
-No Microsoft Edge, instale o auracore pelo [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/auracore/eoijcnmpkocgebbdolcipnbhgkhknmbo).
+No Chrome, instale o auracore pela [Chrome Web Store](https://chromewebstore.google.com/detail/auracore/gdimfnfkcbhfkmopkgbkjnjbmbpbipni). No Microsoft Edge, instale pelo [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/auracore/eoijcnmpkocgebbdolcipnbhgkhknmbo).
 
-O auracore foi enviado à Chrome Web Store e ao addons.mozilla.org em 24 de outubro de 2026 e aguarda a análise das lojas. Até a aprovação, instale no Chrome ou no Firefox a partir deste repositório:
+A versão para Firefox foi enviada ao addons.mozilla.org em 24 de outubro de 2026 e aguarda análise. Até a aprovação, instale a partir deste repositório: rode `npm run package`, abra `about:debugging#/runtime/this-firefox`, clique em Carregar extensão temporária e escolha `dist/auracore-firefox.zip`. O Firefox remove extensões temporárias ao fechar.
+
+Para rodar o código deste repositório no Chrome:
 
 1. Baixe ou clone o repositório.
 2. Abra `chrome://extensions` e ative o Modo do desenvolvedor.
 3. Clique em Carregar sem compactação e selecione a pasta do repositório.
-
-No Firefox: rode `npm run package`, abra `about:debugging#/runtime/this-firefox`, clique em Carregar extensão temporária e escolha `dist/auracore-firefox.zip`. O Firefox remove extensões temporárias ao fechar.
 
 ## Uso
 
