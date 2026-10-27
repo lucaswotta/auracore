@@ -19,18 +19,16 @@
   <a href="https://ko-fi.com/lucaswotta"><img src="https://img.shields.io/badge/Ko--fi-Support-FF5E5B?logo=ko-fi&logoColor=white" alt="Support auracore on Ko-fi"></a>
   <a href="https://github.com/sponsors/lucaswotta"><img src="https://img.shields.io/badge/GitHub-Sponsor-EA4AAA?logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub"></a>
   <a href="https://chromewebstore.google.com/detail/auracore/gdimfnfkcbhfkmopkgbkjnjbmbpbipni"><img src="https://img.shields.io/badge/Chrome-116%2B-4285F4?logo=googlechrome&logoColor=white" alt="Chrome 116+"></a>
-  <img src="https://img.shields.io/badge/Firefox-128%2B-FF7139?logo=firefoxbrowser&logoColor=white" alt="Firefox 128+">
   <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Flucaswotta%2Fauracore%2Fmain%2Fmanifest.json&query=%24.version&label=version&color=5865f2" alt="version">
 </p>
 
 Slowed + reverb, nightcore, lo-fi and 12 more remix styles on any song, without waiting for someone to upload that version. auracore applies the remix live, right in your browser, to whatever you are already listening to.
 
-auracore is an extension for Chrome, Edge and Firefox. Pick a style and the tab's audio changes on the spot: on YouTube, YouTube Music, Spotify, Deezer, SoundCloud and other players.
+auracore is an extension for Chrome and Edge. Pick a style and the tab's audio changes on the spot: on YouTube, YouTube Music, Spotify, Deezer, SoundCloud and other players.
 
 <p align="center">
   <a href="https://microsoftedge.microsoft.com/addons/detail/auracore/eoijcnmpkocgebbdolcipnbhgkhknmbo"><img src="docs/stores/edge-en.webp" alt="Available on Edge Add-ons" width="236"></a>
   <a href="https://chromewebstore.google.com/detail/auracore/gdimfnfkcbhfkmopkgbkjnjbmbpbipni"><img src="docs/stores/chrome-en.webp" alt="Available in the Chrome Web Store" width="236"></a>
-  <img src="docs/stores/firefox-en.webp" alt="Coming soon to Firefox Add-ons" width="236">
 </p>
 
 <p align="center">
@@ -96,14 +94,12 @@ While the music plays she moves with it, a little breathing, swaying or bouncing
 
 ## Requirements
 
-- Chrome 116 or newer, Microsoft Edge 116 or newer, or Firefox 128 or newer. Other browsers have not been tested.
+- Chrome 116 or newer, or Microsoft Edge 116 or newer. Other browsers have not been tested.
 - Node.js 22 or newer, only to run the tests.
 
 ## Installation
 
 In Chrome, install auracore from the [Chrome Web Store](https://chromewebstore.google.com/detail/auracore/gdimfnfkcbhfkmopkgbkjnjbmbpbipni). In Microsoft Edge, install it from [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/auracore/eoijcnmpkocgebbdolcipnbhgkhknmbo).
-
-The Firefox version was submitted to addons.mozilla.org on October 24, 2026, and is awaiting review. Until it is approved, install it from this repository: run `npm run package`, open `about:debugging#/runtime/this-firefox`, click Load Temporary Add-on and pick `dist/auracore-firefox.zip`. Firefox removes temporary add-ons when it closes.
 
 To run the code from this repository in Chrome:
 
@@ -127,13 +123,12 @@ Style, intensity, fade, tape stop and saved styles are stored in `chrome.storage
 ## Limitations
 
 - On services with protected playback, such as Spotify and Amazon Music, effects go through Chrome tab capture, and Chrome shows a capture indicator while the effect is on. Stopping the capture from that indicator turns auracore off on that tab.
-- Firefox has no tab capture, so on those services only speed and pitch change there; the other effects need Chrome.
 - auracore runs on every site so it can find players that start before the popup opens. Access can be limited per site in `chrome://extensions` → auracore → Details.
 - Safari is not supported.
 
 ## Development
 
-`npm test` runs the test suite, with no dependencies to install. `npm run package` builds `dist/auracore.zip` for Chrome and Edge and `dist/auracore-firefox.zip` for Firefox. Developer documentation is in Portuguese: [ARCHITECTURE.md](ARCHITECTURE.md), [TESTING.md](TESTING.md) and [ROADMAP.md](ROADMAP.md).
+`npm test` runs the test suite, with no dependencies to install. `npm run package` builds `dist/auracore.zip` for Chrome and Edge. Developer documentation is in Portuguese: [ARCHITECTURE.md](ARCHITECTURE.md), [TESTING.md](TESTING.md) and [ROADMAP.md](ROADMAP.md).
 
 ## Support
 

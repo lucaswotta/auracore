@@ -44,7 +44,6 @@ Receitas de referência; os testes automatizados da suíte usam simulações de 
 - Efeitos novos: eco, estéreo largo, rádio.
 - Página de convite para quem abre um link compartilhado sem a extensão (GitHub Pages).
 - Estudar concessão por site sem perder a detecção de mídia fora do DOM criada antes do popup e a aplicação automática de links compartilhados. `activeTab` sozinho não preserva esses fluxos.
-- Firefox para Android (o desktop já roda a partir do 128).
 - Testes de DSP offline e integração no navegador via CDP.
 - Verificar a marca "auracore" no INPI e no TMview antes do lançamento.
 

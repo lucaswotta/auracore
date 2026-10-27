@@ -31,10 +31,6 @@ Mídia protegida não deve ser ligada a `MediaElementAudioSourceNode`: isso pode
 | Pulso | `bass`, `phonk` |
 | Flutuação | `underwater`, `ethereal` |
 
-## Firefox
-
-O Firefox 128 ou superior roda o mesmo código. `tools/firefox-manifest.mjs` gera o manifest dele a partir do `manifest.json`: o background vira página de eventos com `styles.js` e `background.js` (sem service worker nem `importScripts`), saem `tabCapture` e `offscreen`, que ele não tem, e entram o ID `auracore@lucaswotta` e a declaração de dados exigida pelo addons.mozilla.org. Sem captura de aba, `background.js` responde que não há captura e o popup avisa, em site protegido, que só velocidade e tom mudam. `npm run package` gera `dist/auracore.zip` (Chrome e Edge) e `dist/auracore-firefox.zip`.
-
 ## Idiomas
 
 A interface segue o idioma do Chrome por `chrome.i18n`: inglês (`default_locale`), espanhol e português do Brasil, em `_locales/`. Idiomas sem tradução, inclusive português de Portugal, caem no inglês. O painel de apoio mostra o Pix só com o Chrome em `pt-BR`. O ID interno de cada estilo não muda com o nome exibido, para preservar estilos salvos.
