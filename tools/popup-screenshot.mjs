@@ -152,9 +152,10 @@ try {
       render();`);
     await sleep(200);
   }
-  // Palco sem título da faixa, para galerias de estilos.
+  // Palco sem título da faixa nem logo, recortado, para galerias de estilos: a logo repetida em
+  // cada palco só disputa espaço com a personagem.
   if (options['clean-stage']) {
-    await evaluate(`document.head.insertAdjacentHTML('beforeend', '<style>.stage-track-wrap { visibility: hidden; }</style>')`);
+    await evaluate(`document.head.insertAdjacentHTML('beforeend', '<style>.stage-track-wrap, #orb { visibility: hidden; }</style>')`);
   }
   if (options.scroll) {
     await evaluate(`(() => {
@@ -175,7 +176,12 @@ try {
       };
     })()`)));
   }
-  const { data } = await send('Page.captureScreenshot', { format: 'png' });
+  const clip = options['clean-stage'] && await evaluate(`(() => {
+    const { x, y, width, height } = document.querySelector('#stage').getBoundingClientRect();
+    return { x, y, width, height, scale: 1 };
+  })()`);
+  const format = options.out.endsWith('.webp') ? 'webp' : 'png';
+  const { data } = await send('Page.captureScreenshot', { format, ...(format === 'webp' && { quality: 90 }), ...(clip && { clip }) });
   writeFileSync(options.out, Buffer.from(data, 'base64'));
   console.log(options.out);
 } finally {
