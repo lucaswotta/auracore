@@ -272,9 +272,6 @@
       }
     }
   },
-  "toast_speed_only": {
-    "message": "Este site protege o áudio: neste navegador, só a velocidade e o tom mudam."
-  },
   "toast_pix_copied": {
     "message": "Código Pix copiado!"
   },

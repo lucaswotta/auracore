@@ -1,7 +1,6 @@
 const $ = (id) => document.getElementById(id);
 const REPO_URL = 'https://github.com/lucaswotta/auracore';
 const KOFI_URL = 'https://ko-fi.com/lucaswotta';
-const AMO_PAGE = 'https://addons.mozilla.org/firefox/addon/auracore/';
 // BR Code estático da chave aleatória, gerado junto com support/pix-qr.svg. Pix só existe no Brasil,
 // então o painel o mostra apenas com o Chrome em português do Brasil.
 const PIX_CODE = '00020101021126580014br.gov.bcb.pix013616a5c103-0372-42a7-8b40-0d29c2a418f05204000053039865802BR5911LUCAS MOTTA6006BRASIL62070503***6304EAD4';
@@ -811,11 +810,6 @@ function save(changes) {
 // popup naquela aba; por isso ela começa e termina aqui, junto com o liga/desliga.
 async function syncCapture() {
   if (!activeTab?.id || onHere() === captured || (!captured && tabEffects !== 'blocked')) return;
-  // Sem captura de aba (Firefox), o site protegido fica só com velocidade e tom.
-  if (!chrome.tabCapture) {
-    if (onHere()) showToast(msg('toast_speed_only'));
-    return;
-  }
   try {
     if (captured) {
       await chrome.runtime.sendMessage({ target: 'background', type: 'capture-stop', tabId: activeTab.id });
@@ -848,10 +842,8 @@ function showToast(text) {
 }
 
 // Instalada por uma loja, a extensão traz o update_url dela e o id é o da loja, então o convite já
-// aponta a página certa. No Firefox o manifest não traz update_url e a página é a do addons.mozilla.org.
-// Carregada sem compactação no Chrome não há página de loja e o convite vai ao repositório.
+// aponta a página certa. Carregada sem compactação não há página de loja e o convite vai ao repositório.
 function installUrl() {
-  if (chrome.runtime?.getURL?.('').startsWith('moz-extension:')) return AMO_PAGE;
   const updateUrl = chrome.runtime?.getManifest?.().update_url ?? '';
   const store = STORE_PAGES.find(({ update }) => updateUrl.includes(update));
   return store && chrome.runtime.id ? `${store.page}${chrome.runtime.id}` : REPO_URL;

@@ -1,15 +1,13 @@
 // Sites com DRM (Spotify, Amazon Music) devolvem silêncio ao Web Audio dentro da página. Para eles,
 // o áudio da aba é capturado já decodificado e passa pelo motor num documento offscreen. Este
 // service worker cria esse documento e repassa a ele as mudanças de estilo, porque documentos
-// offscreen só têm acesso a chrome.runtime. No Firefox não há captura de aba nem offscreen, e o
-// background é uma página de eventos que já recebe o styles.js pelo manifest.
-if (typeof importScripts === 'function') importScripts('styles.js');
+// offscreen só têm acesso a chrome.runtime.
+importScripts('styles.js');
 
 const OFFSCREEN_URL = 'offscreen.html';
 let captureQueue = Promise.resolve();
 
 async function hasOffscreen() {
-  if (!chrome.offscreen || !chrome.runtime.getContexts) return false;
   const contexts = await chrome.runtime.getContexts({ contextTypes: ['OFFSCREEN_DOCUMENT'] });
   return contexts.length > 0;
 }
