@@ -43,6 +43,12 @@ test('toda chave usada no código e no HTML existe', () => {
   }
 });
 
+test('descrições listam os mesmos estilos na mesma ordem', () => {
+  for (const [locale, messages] of Object.entries(locales)) {
+    assert.ok(messages.ext_description.message.startsWith('Slowed + reverb, sped up, nightcore, 8D, lo-fi '), locale);
+  }
+});
+
 test('descrição cabe no limite da Chrome Web Store e nomes compartilhados no limite do link', () => {
   const manifest = JSON.parse(read('manifest.json'));
   assert.equal(manifest.default_locale, 'en');
